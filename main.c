@@ -43,7 +43,7 @@ int main() {
 
     printf("Runtime (cycles): %x\n", cycle_time);
 
-    Matrix_t product;
+    /* Matrix_t product;
     int32_t arr4[4];
     product.elements = arr4;
 
@@ -59,7 +59,7 @@ int main() {
     int64_t cycle_timeb = get_timer();
     printMatrix(product);
 
-    printf("Runtime (cycles): %x\n", cycle_timeb);
+    printf("Runtime (cycles): %x\n", cycle_timeb); */
 
     return 0;
 }
