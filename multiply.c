@@ -8,7 +8,7 @@
 
 /*--------------------------------------------------------------------*/
 
-void vec_multiply(Matrix_t mat1, Matrix_t mat2, Matrix_t* resultingMatrix) {
+void multiply(Matrix_t mat1, Matrix_t mat2, Matrix_t* resultingMatrix) {
 
     // p = mat1 row size, n = mat1 col and mat2 row size, q = mat2 col size
     size_t p = mat1.m;
