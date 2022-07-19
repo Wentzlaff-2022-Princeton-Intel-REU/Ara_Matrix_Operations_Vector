@@ -4,7 +4,7 @@
 /*------------------------------------------------------------*/
 
 #include "matrix.h"
-#includ "printf.h"          
+#include "printf.h"          
 
 /*------------------------------------------------------------*/
 // prints out the elements in the given matrix
