@@ -8,6 +8,7 @@
 
 #include "add.h"
 #include "matrix.h"
+#include <riscv_vector.h>
 #include "printf.h"
 
 /*--------------------------------------------------------------------*/
