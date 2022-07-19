@@ -22,11 +22,10 @@ int main() {
     int32_t arr2[4] = {1,1,1,1};
     matrix_A.elements = arr;
     matrix_B.elements = arr2;
-    // readMatrices(&matrix_A, &matrix_B);
 
-    Matrix_t resultingMatrix;
+    Matrix_t sum;
     int32_t arr3[4];
-    resultingMatrix.elements = arr3;
+    sum.elements = arr3;
 
     printf("Vector Addition: \n");
 
@@ -36,11 +35,11 @@ int main() {
 
     
     start_timer();
-    add(matrix_A, matrix_B, &resultingMatrix);
+    add(matrix_A, matrix_B, &sum);
     stop_timer();
     int64_t cycle_time = get_timer();
 
-    printMatrix(resultingMatrix);
+    printMatrix(sum);
 
     printf("Runtime (cycles): %x\n", cycle_time);
 
