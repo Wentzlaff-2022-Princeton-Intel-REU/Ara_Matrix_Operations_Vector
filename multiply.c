@@ -18,6 +18,7 @@ void multiply(Matrix_t mat1, Matrix_t mat2, Matrix_t* resultingMatrix) {
     // init result matrix
     resultingMatrix->m = p;
     resultingMatrix->n = q;
+    // int32_t* product = resultingMatrix->elements;
 
     vint32m1_t vb, vc;
     
@@ -38,7 +39,7 @@ void multiply(Matrix_t mat1, Matrix_t mat2, Matrix_t* resultingMatrix) {
             }
             // once the whole row of mat1 has been iterated through, save the
             // vc register to the correct location in memory at resultingMatrix
-            vse32_v_i32m1(resultingMatrix->elements[i * q + (q - avl)], vc, vl);
+            vse32_v_i32m1(&resultingMatrix->elements[i * q + (q - avl)], vc, vl);
         }
     }
 }

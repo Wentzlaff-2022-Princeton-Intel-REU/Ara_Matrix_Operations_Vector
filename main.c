@@ -47,7 +47,7 @@ int main() {
     int32_t arr4[4];
     product.elements = arr4;
 
-    printf("Vector Multiplication: ");
+    printf("Vector Multiplication: \n");
 
     printMatrix(matrix_A);
     printf("\n");
