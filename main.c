@@ -41,7 +41,7 @@ int main() {
 
    // printMatrix(sum);
 
-    printf("Runtime (cycles): %x\n", cycle_time);
+    printf("Runtime (cycles): %d\n", cycle_time);
 
     Matrix_t product;
     int32_t arr4[4];
