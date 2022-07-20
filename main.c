@@ -14,17 +14,17 @@
 int main() {
     
     Matrix_t matrix_A, matrix_B;
-    matrix_A.m = 4;
-    matrix_A.n = 4;
-    matrix_B.m = 4;
-    matrix_B.n = 4;
-    int32_t arr[16] = {59, 63, 63, 28, 76, 64, 32, 43, 36, 63, 28, 76, 64, 32, 43, 36};
-    int32_t arr2[16] = {59, 63, 63, 28, 76, 64, 32, 43, 36, 63, 28, 76, 64, 32, 43, 36};
+    matrix_A.m = 5;
+    matrix_A.n = 5;
+    matrix_B.m = 5;
+    matrix_B.n = 5;
+    int32_t arr[25] = {59, 63, 63, 28, 76, 64, 32, 43, 36, 63, 28, 76, 64, 32, 43, 36, 43, 36, 63, 28, 76, 64, 32, 43, 36};
+    int32_t arr2[25] = {59, 63, 63, 28, 76, 64, 32, 43, 36, 63, 28, 76, 64, 32, 43, 36, 43, 36, 63, 28, 76, 64, 32, 43, 36};
     matrix_A.elements = arr;
     matrix_B.elements = arr2;
 
     Matrix_t sum;
-    int32_t arr3[16];
+    int32_t arr3[25];
     sum.elements = arr3;
 
     // printf("Vector Addition: \n");
@@ -44,7 +44,7 @@ int main() {
     printf("Runtime (cycles): %d\n", cycle_time);
 
     Matrix_t product;
-    int32_t arr4[16];
+    int32_t arr4[25];
     product.elements = arr4;
 
    // printf("Vector Multiplication: \n");
