@@ -27,19 +27,19 @@ int main() {
     int32_t arr3[100];
     sum.elements = arr3;
 
-    printf("Vector Addition: \n");
+    // printf("Vector Addition: \n");
 
-    printMatrix(matrix_A);
-    printf("\n");
-    printMatrix(matrix_B);
-    printf("\n");
+   //  printMatrix(matrix_A);
+    // printf("\n");
+   //  printMatrix(matrix_B);
+   //  printf("\n");
     
     start_timer();
     add(matrix_A, matrix_B, &sum);
     stop_timer();
     int64_t cycle_time = get_timer();
 
-    printMatrix(sum);
+   // printMatrix(sum);
 
     printf("Runtime (cycles): %x\n", cycle_time);
 
@@ -47,19 +47,19 @@ int main() {
     int32_t arr4[100];
     product.elements = arr4;
 
-    printf("Vector Multiplication: \n");
+   // printf("Vector Multiplication: \n");
 
-    printMatrix(matrix_A);
-    printf("\n");
-    printMatrix(matrix_B);
-    printf("\n");
+   // printMatrix(matrix_A);
+   // printf("\n");
+// printMatrix(matrix_B);
+  //  printf("\n");
 
     start_timer();
     multiply(matrix_A, matrix_B, &product);
     stop_timer();
     int64_t cycle_timeb = get_timer();
     
-    printMatrix(product);
+   // printMatrix(product);
 
     printf("Runtime (cycles): %x\n", cycle_timeb);
 
