@@ -61,7 +61,7 @@ int main() {
     
    // printMatrix(product);
 
-    printf("Runtime (cycles): %x\n", cycle_timeb);
+    printf("Runtime (cycles): %d\n", cycle_timeb);
 
     return 0;
 }
