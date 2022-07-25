@@ -4,7 +4,6 @@
 
 #include <riscv_vector.h>
 #include "add.h"
-#include "printf.h"
 
 /*--------------------------------------------------------------------*/
 

@@ -5,6 +5,7 @@
 #include "add.h"
 #include "multiply.h"
 #include "print.h"
+#include "printf.h"
 #include "runtime.h"
 
 /*--------------------------------------------------------------------*/
@@ -24,10 +25,12 @@ int main() {
     int32_t elementsSum[4];
     sum.elements = elementsSum;
 
-    // printf("Vector Addition: \n");
+    // printf("Vector Addition:\n\n");
 
+    // printf("Matrix A:\n");
     // printMatrix(matrix_A);
     // printf("\n");
+    // printf("Matrix B:\n");
     // printMatrix(matrix_B);
     // printf("\n");
     
@@ -36,6 +39,7 @@ int main() {
     stop_timer();
     int64_t cycle_time = get_timer();
 
+    // printf("Sum:\n");
     // printMatrix(sum);
 
     printf("Runtime (cycles): %d\n", cycle_time);
@@ -45,10 +49,12 @@ int main() {
     int32_t elementsProd[4];
     product.elements = elementsProd;
 
-    // printf("Vector Multiplication: \n");
+    // printf("Vector Multiplication:\n\n");
 
+    // printf("Matrix A:\n");
     // printMatrix(matrix_A);
     // printf("\n");
+    // printf("Matrix B:\n");
     // printMatrix(matrix_B);
     // printf("\n");
 
@@ -56,7 +62,8 @@ int main() {
     multiply(matrix_A, matrix_B, &product);
     stop_timer();
     int64_t cycle_timeb = get_timer();
-    
+
+    // printf("Product:\n");
     // printMatrix(product);
 
     printf("Runtime (cycles): %d\n", cycle_timeb);
